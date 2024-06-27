@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Image Slider with Navigation</title>
+    <style>
+        /* body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 80vh;
+    background-color: #f0f0f0;
+} */
+
+.sliderh-containerh {
+    position: relative;
+    width: 100%;
+    max-width: 100%;
+    overflow: hidden;
+    border: 1px solid #ccc;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    height: 60vh;
+    margin-top: 60px;
+}
+
+
+.sliderh {
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+}
+
+.sliderh img {
+    width: 100%;
+    height: auto;
+}
+
+.sliderh-btn {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    font-size: 20px;
+    padding: 10px;
+    transition: background-color 0.3s ease;
+}
+
+.sliderh-btn:hover {
+    background-color: rgba(0, 0, 0, 0.8);
+}
+
+.prev-btn {
+    left: 10px;
+}
+
+.next-btn {
+    right: 10px;
+}
+
+    </style>
+</head>
+<body>
+    <div class="sliderh-containerh">
+        <div class="sliderh">
+            <img src="https://images-eu.ssl-images-amazon.com/images/G/31/img21/MA2024/GW/June/Unrec/166-1._CB555072489_.jpg" alt="Image 1">
+            <img src="https://images-eu.ssl-images-amazon.com/images/G/31/BISS_2024/GW_heros_June24/PC_june/3000x1200_PC_2._CB554379545_.jpg" alt="Image 2">
+            <img src="https://images-eu.ssl-images-amazon.com/images/G/31/img24/Media/BAU/D132995370_Homepage_DesktopHeroTemplate_3000x1200._CB557152260_.jpg" alt="Image 3">
+            <img src="https://images-eu.ssl-images-amazon.com/images/G/31/img22/Wireless/devjyoti/GW/Uber/Nov/D103625178_DesktopTallHero_3000x1200_V3._CB558389732_.jpg" alt="Image 4">
+            <img src="https://images-eu.ssl-images-amazon.com/images/G/31/img21/MA2024/GW/June/Unrec/165-1._CB555072489_.jpg" alt="Image 5">
+            <img src="https://images-eu.ssl-images-amazon.com/images/G/31/img18/HomeImprovement/harsmisc/2024/SmartHomeDays/HI_Under_499_PC_BAU_FDFO_3000._CB554158668_.jpg" alt="Image 6">
+            <img src="https://images-eu.ssl-images-amazon.com/images/G/31/INSLGW/pc_unrec_refresh._CB555261616_.jpg" alt="Image 7">
+        </div>
+        <button class="sliderh-btn prev-btn" aria-label="Previous Image">&#10094;</button>
+        <button class="sliderh-btn next-btn" aria-label="Next Image">&#10095;</button>
+    </div>
+
+    <script src="./slider.js">
+
+
+    </script>
+</body>
+</html>
